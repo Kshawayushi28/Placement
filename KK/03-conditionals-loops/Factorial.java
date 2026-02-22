@@ -8,10 +8,15 @@ class Factorial {
         System.out.print("Enter the no.: ");
         int n = sc.nextInt();
         int fact = 1;
-        for(int i=1;i<=n;i++){
-            fact = fact*i; 
+        System.out.print(n + "! = ");
+        for(int i = 1; i <= n; i++) {
+            fact = fact * i;
+            System.out.print(i);
+            if(i < n) {
+                System.out.print(" * ");
+            }
         }
-        System.out.println("Factorial = "+fact);
+        System.out.println(" = " + fact);
         sc.close();
     }
 }
